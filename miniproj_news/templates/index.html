@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기사 URL 입력</title>
+    <style>
+        @font-face {
+            font-family: "머니그라피 Rounded";
+            src: local("머니그라피 Rounded");
+        }
+
+        body, input, button, .result {
+            font-family: "머니그라피 Rounded", sans-serif;
+        }
+
+        body {
+            margin: 20px;
+            background-color: #ffffff; /* 원하는 배경색으로 수정 */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-right: 74px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: 2px solid #000000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+        button {
+            border-radius: 10px;
+            border: 2px solid #000000;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ffffff;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .result {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            min-height: 50px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            border: 2px solid #000000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .main_1 {
+            height: 2000px;
+            margin-left: 34rem;
+            width: 740px;
+            border: 2px solid #000000;
+    }
+    </style>
+</head>
+<body>
+    <div class="main_1" >
+        <div class="container">
+            <h1>기사 URL 입력</h1>
+            <label for="url">URL:</label>
+            <input type="url" id="url" placeholder="기사 URL을 입력하세요">
+            <button id="submitButton">확인</button>
+    
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+    
+
+    <script src="/static/js/app.js" defer></script>
+</body>
+</html>

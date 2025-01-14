@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 텍스트 비교 도구</title>
+    <link rel="stylesheet" href="/static/style.css"> <!-- CSS 파일 경로 -->
+</head>
+<body>
+    <div class="container">
+        <h1>너의 계약서는</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="imageInput" class="custom-file-label">이미지를 업로드하세요</label>
+            <div class="input-wrapper">
+                <img id="uploadedImage" class="uploaded-image" alt="업로드된 이미지">
+            </div>
+            <input type="file" id="imageInput" name="image" accept="image/*" required>
+            <button type="submit">확인</button>
+        </form>
+
+        <!-- 결과 출력 박스 -->
+        <div id="resultBox" class="result-box">
+            <h2>결과</h2>
+            <ul id="resultContent">
+                <!-- 결과 내용이 여기에 추가됩니다 -->
+            </ul>
+        </div>
+    </div>
+    <script src="/static/script.js"></script> <!-- JavaScript 파일 경로 -->
+</body>
+</html>
